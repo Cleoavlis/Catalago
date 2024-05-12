@@ -1,0 +1,79 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(211, 189, 160);
+    
+}
+
+header {
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+   width: calc(23.24% - 10px); /* Define a largura de cada produto (33.33% do contêiner) com um pequeno espaço entre eles */
+    margin-bottom: 20px; /* Espaçamento inferior entre os produtos */
+  /*  width: 200px;
+    height: 300px;  Defina uma altura fixa para os produtos */
+   border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Para garantir que imagens maiores não transbordem */
+    display: flex; /* Para centralizar verticalmente o conteúdo */
+    flex-direction: column; /* Alinhe o conteúdo verticalmente */
+    background: rgb(182, 147, 147);
+   }
+
+.product img {
+    max-width: 100%;
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+.product-item {
+   /* border: 1px solid #ccc; /*Adiciona uma borda ao redor de cada produto para destacá-los */
+    padding: 10px; /* Adiciona um preenchimento interno aos produtos */
+    text-align: center; /* Alinha o conteúdo dentro de cada produto ao centro */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos quebrem para a próxima linha quando não houver espaço suficiente */
+    justify-content: space-between; /* Alinha os produtos horizontalmente com espaçamento uniforme */
+}
+
+a {
+    text-decoration: none;
+}
+a {
+    color:rgb(242, 224, 224); /* Defina a cor desejada */
+
+}.menu {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 149, 67); /* Cor de fundo do menu */
+}
+
+.menu li {
+    display: inline-block; /* Exibe os itens do menu horizontalmente */
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px; /* Adiciona espaçamento interno aos itens do menu */
+    text-decoration: none;
+    color: #fff; /* Cor do texto dos itens do menu */
+}
+
+.menu li a:hover {
+    background-color: #555; /* Cor de fundo do item do menu quando passa o mouse por cima */
+}
