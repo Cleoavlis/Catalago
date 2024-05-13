@@ -1,22 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background :burlywood ;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("fundo-img.jpg");
 }
 
 .container {
     max-width: 400px;
-   margin: 50px auto;
+   /*margin: 0px auto;*/
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #d91a83;
 }
 
 form {
@@ -25,12 +25,15 @@ form {
 
 label {
     font-weight: bold;
+    margin-left: 20px;
+    color: #d91a83;
+
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -38,6 +41,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    margin-left: 20px;
 }
 
 textarea {
@@ -46,7 +50,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #d91a83;
     color: white;
     padding: 14px 20px;
     margin-top: 10px;
@@ -54,30 +58,38 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 30%;
     box-sizing: border-box;
+    margin-left: 20px;
+    
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
-    color: #45a049;
+    color: #d91a83;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(240, 171, 194, 0.5); /* RGBA com 50% de transparência */
+    
 }
 
 
 
 .contact-options li {
     margin-bottom: 20px;
+    margin-left: 20px;
+
 }
 
 .contact-options li a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #45a049;
+    color: #d91a83 ;
     transition: color 0.3s ease;
 }
 
@@ -88,13 +100,12 @@ p {
 }
 
 .contact-options li a:hover {
-    color: #4CAF50;
+    color: #222622;
 }
 .menu {
     list-style-type: none; /* Remove os marcadores de lista */
-    margin: 0;
-    padding: 0;
-    background-color: rgb(211, 149, 67); /* Cor de fundo do menu */
+    text-align: center;
+    background-color: #d91a83; /* Cor de fundo do menu */
 }
 
 .menu li {
@@ -102,12 +113,19 @@ p {
 }
 
 .menu li a {
-    display: block;
-    padding: 10px 20px; /* Adiciona espaçamento interno aos itens do menu */
+   display: inline-block;
+    margin: 0 10px;
     text-decoration: none;
     color: #fff; /* Cor do texto dos itens do menu */
 }
 
 .menu li a:hover {
     background-color: #555; /* Cor de fundo do item do menu quando passa o mouse por cima */
+}
+/* Estilos para dispositivos com tela de até 600 pixels de largura */
+@media only screen and (max-width: 600px) {
+    .elemento {
+        /* Estilos específicos para telas menores */
+        /* Por exemplo, reduzir a largura do elemento ou ajustar margens/padding */
+    }
 }

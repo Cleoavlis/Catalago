@@ -1,12 +1,12 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgb(211, 189, 160);
+    background-image: url("fundo-img.jpg");
     
 }
 
 header {
-    background-color: burlywood;
-    color: white;
+    background-color: rgba(240, 171, 194, 0.5); /* RGBA com 50% de transparência */
+    color: #d91a83;
     padding: 20px;
     text-align: center;
 }
@@ -22,14 +22,14 @@ header {
     margin-bottom: 20px; /* Espaçamento inferior entre os produtos */
   /*  width: 200px;
     height: 300px;  Defina uma altura fixa para os produtos */
-   border: 1px solid #ccc;
+   border: 1px solid;
+   border-color: #d91a83;
     margin: 10px;
     padding: 10px;
     text-align: center;
     overflow: hidden; /* Para garantir que imagens maiores não transbordem */
     display: flex; /* Para centralizar verticalmente o conteúdo */
     flex-direction: column; /* Alinhe o conteúdo verticalmente */
-    background: rgb(182, 147, 147);
    }
 
 .product img {
@@ -54,13 +54,12 @@ a {
     text-decoration: none;
 }
 a {
-    color:rgb(242, 224, 224); /* Defina a cor desejada */
+    color:#d91a83; /* Defina a cor desejada */
 
 }.menu {
     list-style-type: none; /* Remove os marcadores de lista */
-    margin: 0;
-    padding: 0;
-    background-color: rgb(211, 149, 67); /* Cor de fundo do menu */
+   text-align: center;
+    background-color: #d91a83; /* Cor de fundo do menu */
 }
 
 .menu li {
@@ -68,12 +67,19 @@ a {
 }
 
 .menu li a {
-    display: block;
-    padding: 10px 20px; /* Adiciona espaçamento interno aos itens do menu */
+    display: inline-block;
+    margin: 0 10px;
     text-decoration: none;
     color: #fff; /* Cor do texto dos itens do menu */
 }
 
 .menu li a:hover {
     background-color: #555; /* Cor de fundo do item do menu quando passa o mouse por cima */
+}
+/* Estilos para dispositivos com tela de até 600 pixels de largura */
+@media only screen and (max-width: 600px) {
+    .elemento {
+        /* Estilos específicos para telas menores */
+        /* Por exemplo, reduzir a largura do elemento ou ajustar margens/padding */
+    }
 }
